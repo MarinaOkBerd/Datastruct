@@ -15,3 +15,13 @@ class TestNode(unittest.TestCase):
         assert node2.next_node is self.node_10
 
 
+class TestStack(unittest.TestCase):
+    def test_Stack(self):
+        stack = Stack()
+        stack.push('data1')
+        stack.push('data2')
+        self.assertEqual(stack.top.data, 'data2')
+        self.assertEqual(stack.pop(), 'data2')
+
+
+
